@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <title>Multiples of 3 & 5</title>
+	</head>
+	<body>
+		<p>Click the display button for the result</p>
+		<button onclick = "fizzbuzz()">Display</button>
+		<script>
+			var str ; // It is used to store Fizz / Buzz / Both
+			function fizzbuzz() {
+				for(i = 1; i <= 100; i++) {
+					str = ''; // To initialize the value to null
+					// To check if the number is divisible by 3 then append 'Fizz'
+					if((i % 3) == 0) {
+						str = str + 'Fizz';
+					}
+					// To check if the number is divisible by 5 then append 'Buzz'
+					if((i % 5) == 0) {
+						str = str +'Buzz';
+					}
+					console.log (i +' '+ str);
+				}
+			}
+		</script>
+	</body>
+</html>
